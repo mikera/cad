@@ -7,7 +7,8 @@
             [cad.mesh.color :as mc]
             [cad.mesh.core :as mm]
             [cad.mesh.ops :as op]
-            [thi.ng.geom.mesh.polyhedra :as ph]))
+            [thi.ng.geom.mesh.polyhedra :as ph]
+            [clisk.live :as clisk]))
 
 
 ; ==============================================================================
@@ -308,6 +309,13 @@
       (op/colorize mc/area-mod10)))
 
 ;(time (cad/save-x3d "output/sandbox/skel-09.x3d" (skel-09)))
+
+(defn clisk-colour [mesh colourer]
+  (-> mesh
+      (op/colorize-clisk colourer)
+      (mm/prn-fev "Final")))
+
+;(time (cad/save-x3d "output/sandbox/clisk-noise.x3d" (clisk-colour (ambo-02) clisk/vnoise)))
 
 (defn davinci [seed]
   (let [mesh (-> seed

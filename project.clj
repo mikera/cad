@@ -6,7 +6,7 @@
                  [bardo "0.1.2-SNAPSHOT"]
                  [clj-time "0.11.0"]
                  [scad-clj "0.6.0-SNAPSHOT"]
-                 [net.mikera/clisk "0.10.1"]
+                 [net.mikera/clisk "0.11.0"]
                  [thi.ng/color "1.0.0"]
                  [thi.ng/geom "0.0.908"]
                  [thi.ng/math "0.1.4"]]
