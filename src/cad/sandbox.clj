@@ -163,7 +163,7 @@
                  (mm/prn-fev "Final"))]
     mesh))
 
-(time (cad/save-x3d "output/sandbox/skel-01.x3d" (skel-01 (mm/octo 10))))
+;; (time (cad/save-x3d "output/sandbox/skel-01.x3d" (skel-01 (mm/octo 10))))
 
 (defn skel-02 []
   (-> (cu/cuboid -5 10)
