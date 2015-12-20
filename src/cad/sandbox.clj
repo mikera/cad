@@ -315,7 +315,7 @@
       (op/colorize-clisk colourer)
       (mm/prn-fev "Final")))
 
-;(time (cad/save-x3d "output/sandbox/clisk-noise.x3d" (clisk-colour (ambo-02) clisk/vnoise)))
+;(time (cad/save-x3d "output/sandbox/clisk-noise.x3d" (clisk-colour (ambo-01 (mm/dodeca 10)) clisk/vnoise)))
 
 (defn davinci [seed]
   (let [mesh (-> seed
