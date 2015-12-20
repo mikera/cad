@@ -13,3 +13,7 @@ pom.xml.asc
 /.lein-*
 /.nrepl-port
 /output/sandbox
+/bin/
+/.classpath
+/.project
+/.settings/
